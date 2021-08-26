@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "Reddit Adblocker",
+	"author": "MSGuy01",
+	"description": "Automatically removes promoted posts while scrolling Reddit",
+	"version": "1.0",
+	"icons": {
+		"16": "images/16.png",
+		"48": "images/48.png",
+		"128": "images/128.png"
+	},
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Reddit Adblocker"
+	},
+	"background": {
+      "scripts": ["background.js"],
+      "persistent": true
+  	},
+	"content_scripts": [
+	  {
+	    "matches": [
+	      "<all_urls>"
+	    ],
+	    "js": ["content.js"]
+	  }
+	]
+}
