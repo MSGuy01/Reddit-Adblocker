@@ -13,10 +13,6 @@
 		"default_popup": "popup.html",
 		"default_title": "Reddit Adblocker"
 	},
-	"background": {
-      "scripts": ["background.js"],
-      "persistent": true
-  	},
 	"content_scripts": [
 	  {
 	    "matches": [
